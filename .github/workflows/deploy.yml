@@ -22,7 +22,7 @@ jobs:
 
     - name: 🚀 远程部署到服务器
       run: |
-        ssh user@your-server-ip << 'EOF'
+        ssh root@64.176.56.4 << 'EOF'
           cd /var/www/my-blog || (mkdir -p /var/www/my-blog && cd /var/www/my-blog)
           git pull origin main
           npm install
