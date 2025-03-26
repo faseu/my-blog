@@ -37,20 +37,9 @@ jobs:
             git pull origin main
           fi
 
-          # 确保 Node.js 和 Yarn 可用
-          if ! command -v yarn &> /dev/null; then
-            echo "⚠️ yarn 未安装，正在安装 Node.js 和 Yarn..."
-            curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
-            sudo apt install -y nodejs
-            # 安装 Yarn
-            curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-            echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-            sudo apt update && sudo apt install yarn
-          fi
-
           # 安装依赖并构建
           yarn install
-          yarn build
+          vite build
 
           # 重启 Nginx
           sudo systemctl restart nginx
