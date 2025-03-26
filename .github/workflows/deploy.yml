@@ -22,10 +22,32 @@ jobs:
 
     - name: 🚀 远程部署到服务器
       run: |
-        ssh root@64.176.56.4 << 'EOF'
-          cd /var/www/my-blog || (mkdir -p /var/www/my-blog && cd /var/www/my-blog)
-          git pull origin main
+        ssh -o StrictHostKeyChecking=no root@64.176.56.4 << 'EOF'
+          set -e  # 遇到错误立即退出
+
+          # 确保目录存在
+          mkdir -p /var/www/my-blog
+          cd /var/www/my-blog
+
+          # 如果没有 .git 目录，则克隆仓库，否则拉取最新代码
+          if [ ! -d ".git" ]; then
+            git clone https://github.com/faseu/my-blog.git .
+          else
+            git reset --hard
+            git pull origin main
+          fi
+
+          # 确保 Node.js 和 npm 可用
+          if ! command -v npm &> /dev/null; then
+            echo "⚠️ npm 未安装，正在安装 Node.js..."
+            curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+            sudo apt install -y nodejs
+          fi
+
+          # 安装依赖并构建
           npm install
           npm run build
+
+          # 重启 Nginx
           sudo systemctl restart nginx
         EOF
