@@ -1,0 +1,31 @@
+name: Deploy to VPS
+
+on:
+  push:
+    branches:
+      - main  # 监听 main 分支的 push 事件
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: 🚀 拉取 Git 仓库
+      uses: actions/checkout@v4
+
+    - name: 🔑 配置 SSH 免密登录
+      run: |
+        mkdir -p ~/.ssh
+        echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan -H your-server-ip >> ~/.ssh/known_hosts
+
+    - name: 🚀 远程部署到服务器
+      run: |
+        ssh user@your-server-ip << 'EOF'
+          cd /var/www/my-blog || (mkdir -p /var/www/my-blog && cd /var/www/my-blog)
+          git pull origin main
+          npm install
+          npm run build
+          sudo systemctl restart nginx
+        EOF
