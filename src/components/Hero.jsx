@@ -29,7 +29,7 @@ const Hero = ({ loading }) => {
       >
         <div className={styles.heroSubText}>
           <p className="flip-horizontal-bottom">Hello, my</p>
-          <p className="flip-horizontal-bottom">name&apos;s 朱2.</p>
+          <p className="flip-horizontal-bottom">name&apos;s 朱3.</p>
           <p className="flip-horizontal-bottom">I&apos;m a Full</p>
           <p className="flip-horizontal-bottom">Stack Developer.</p>
         </div>
