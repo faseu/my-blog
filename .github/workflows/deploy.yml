@@ -31,7 +31,7 @@ jobs:
 
           # 如果没有 .git 目录，则克隆仓库，否则拉取最新代码
           if [ ! -d ".git" ]; then
-            git clone https://github.com/faseu/my-blog.git .
+            git clone git@github.com:faseu/my-blog.git .
           else
             git reset --hard
             git pull origin main
