@@ -33,152 +33,74 @@ export const navLinks = [];
 
 const services = [
   {
-    title: 'Full-Stack Web Developer',
+    title: '全栈Web开发工程师',
     icon: web,
-    description: 'Beautiful dynamic websites',
+    description: '美观的动态网站开发',
   },
   {
-    title: 'Software Engineer',
+    title: '软件工程师',
     icon: mobile,
-    description: 'Innovative code creator',
+    description: '创新代码创造者',
   },
   {
-    title: 'Kinesiologist',
+    title: '前端技术专家',
     icon: backend,
-    description: 'Body movement specialist',
+    description: '用户体验优化专家',
   },
   {
-    title: 'Continuous Learner',
+    title: '持续学习者',
     icon: creator,
-    description: 'Eternal knowledge seeker',
+    description: '永恒的知识探索者',
   },
 ];
 
 const experiences = [
   {
-    title: 'Web Dev Basics',
-    company_name: 'freeCodeCamp',
-    icon: freeCodeCamp,
-    iconBg: '#030220',
-    date: '2020 - 2021',
-    points: [
-      'Responsive Web Design Certification | Utilized HTML/CSS3 to create responsive static websites',
-      'JavaScript Algorithms and Data Structures Certification | Foundational knowledge of JavaScript',
-      'Front End Development Libraries Certification | React, Redux, Bootstrap, JQuery',
-    ],
-  },
-  {
-    title: "Harvard's CS50",
-    company_name: 'Harvard University',
-    icon: harvard,
-    iconBg: '#E6DEDD',
-    date: '2021',
-    points: [
-      'An 11 week long course to the fundamentals in Computer Science',
-      'Created 11 different projects utilizing different methods or languages each week',
-      'Learned Scratch, C, Arrays & Algorithms in C, Memory, Data Structures, SQL, HTML/CSS/Javascript, Flask and Cybersecurity Fundamentals',
-    ],
-    source: {
-      description: 'Click here for the certificate...',
-      link: 'https://certificates.cs50.io/8568293d-85c8-4367-a126-cdd765221073.pdf?size=letter',
-    },
-  },
-  {
-    title: "Angela Yu's 100 Days of Code BootCamp in Python",
-    company_name: 'Udemy',
-    icon: udemy,
+    title: 'Web前端开发工程师/开发技术负责人',
+    company_name: '浙江刘小白智能有限公司/杭州星物种机器人有限公司',
+    icon: mobile, // 您可以替换为公司logo
     iconBg: '#383E56',
-    date: '2022',
+    date: '2021.03 ~ 至今',
     points: [
-      'Built upon and improved my knowledge of Python to greater heights.',
-      "Learned back-end web development with Flask, SQL, and created REST API's.",
-      'Web scraping with Beautiful Soup and Selenium',
-      'Data science/analysis with numpy and matplotlib',
-      'Created 100 projects in 100+ days',
+      '主导Web前端开发，负责系统设计、技术选型和框架升级，提升项目的技术架构和开发效率',
+      '开发并维护微信小程序、支付宝小程序及数据大屏等核心项目，优化用户体验',
+      '与市场部门密切合作，参与需求评估、技术调研和开发协调，确保项目顺利落地',
+      '参与机器人相关业务的技术实现和应用落地，为新业务的快速发展提供技术支持',
     ],
-    source: {
-      description: 'Link to the bootcamp...',
-      link: 'https://www.udemy.com/course/100-days-of-code/',
-    },
   },
   {
-    title: 'Web Development w/ React',
-    company_name: 'CodePath',
-    icon: codepath,
+    title: 'Web前端开发工程师',
+    company_name: '浙江孟想网络科技有限公司',
+    icon: udemy,
+    iconBg: '#E6DEDD',
+    date: '2020.11 ~ 2021.02',
+    points: [
+      '负责孟想教育Uniapp混合开发项目的更新迭代与优化，提升系统稳定性与用户体验',
+      '负责孟想教育图书商城的开发与功能升级，推动平台商业化进程',
+      '支持《孟建平系列丛书》相关业务需求的开发和实现，为项目的顺利推进提供技术保障',
+    ],
+  },
+  {
+    title: '开发工程师',
+    company_name: '安徽缀阳科技有限公司',
+    icon: backend,
     iconBg: '#2b3f46',
-    date: 'Sept 2023 - Nov 2023',
+    date: '2019.04 ~ 2020.10',
     points: [
-      'A 10 week course for students to dive into React.',
-      "Learned about web design, Vite, utilizing API's, and user interactivity through creating 10 different projects",
-      'Implementing responsive design and ensuring cross-browser compatibility.',
+      '参与多个项目功能模块的开发，确保产品按时交付并满足业务需求',
+      '协助进行后台Web功能的迭代优化，提升系统性能和稳定性，提升用户体验',
     ],
-    source: {
-      description: 'Link to the final project...',
-      link: 'https://davidcao.xyz/Book-Chronicles/',
-    },
   },
   {
-    title: 'Hackathon Hacker',
-    company_name: 'NeurAlbertaTech',
-    icon: nathacks,
-    iconBg: '#1f1f1f',
-    date: 'Nov 2023',
-    points: [
-      'Led a team of 5 people to develop a solution addressing the challenges of connecting locals with family physicians in their area within 64 hours',
-      'Designed and implemented a user-friendly website that facilitates easy access to local healthcare providers. React was used as the front-end and Flask was used as the back-end',
-      'Researched and implemented a machine learning model for the Muse2 BCI to detect different emotions of the wearer using EEG signals which were displayed on the website',
-    ],
-    source: {
-      description: 'Link to the final project...',
-      link: 'https://devpost.com/software/physmatch',
-    },
-  },
-  {
-    title: 'Master of Computer Science',
-    company_name: 'University of Pennsylvania',
-    icon: upenn,
+    title: '物联网工程专业',
+    company_name: '安徽建筑大学',
+    icon: harvard,
     iconBg: '#fdfdfd',
-    date: 'Sept 2023 - Present',
+    date: '2015.09 - 2019.07',
     points: [
-      "A Master's degree from the Ivy league University of Pennsylvania, providing foundational knowledge in computer science and math concepts as well as higher level knowledge based on chosen electives",
-      'Courses taken so far: Software Development, Discrete Math, Computer Systems, Data Structures & Software Design',
-      'Gained expertise in Python, Java, and C',
-    ],
-  },
-  {
-    title: 'React Developer, Front-end Team Lead',
-    company_name: 'SkyIT Services',
-    icon: skyit,
-    iconBg: 'white',
-    date: 'Feb 2024 - May 2024',
-    points: [
-      'Led the successful migration of 3 complex React projects into a single, streamlined monorepo, improving code maintainability and collaboration',
-      'Collaborated with the cybersecurity team to implement multi-factor authentication, enhancing login security for all users',
-      'Boosted team productivity by 15% through the creation of video tutorials, comprehensive documentation updates in READMEs, and ongoing mentorship programs.',
-    ],
-  },
-  {
-    title: 'Student Engineer',
-    company_name: 'Develop for Good',
-    icon: develop_for_good,
-    iconBg: '#1f1f1f',
-    date: 'May 2024 - Present',
-    points: [
-      'Applied full-stack development skills to research, scope, develop, and demo a real-world solution for a non-profit organization within a compressed 16-week timeframe.',
-      'Currently in the process of implementing key features on the One Accord social network, enhancing user experience and facilitating connections between people of faith.',
-      'Effectively collaborated with a diverse team to deliver a social media platform for Kingdom Dao. This project honed my communication and teamwork skills, leading to a more efficient development process.',
-    ],
-  },
-  {
-    title: 'Teaching Assistant',
-    company_name: 'University of Pennsylvania',
-    icon: upenn,
-    iconBg: 'white',
-    date: 'May 2024 - Present',
-    points: [
-      'Helped students solidify their understanding of data structures and algorithms through interactive weekly office hours and student forums, assisting an average of 20+ students per week.',
-      'Led an engaging open recitation session for key topics, fostering active student participation and potentially contributing to improved exam performance.',
-      'Provided constructive feedback on graded assignments and exams for a class of 100+ students, maintaining a consistent grading rubric and facilitating student improvement.',
+      '主修课程：计算机网络、计算机组成原理、计算机操作系统、数据结构、C语言',
+      'linux程序设计、数据库设计、数据挖掘与分析等核心技术课程',
+      '为后续的前端开发职业生涯奠定了坚实的计算机科学基础',
     ],
   },
 ];
@@ -186,173 +108,178 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      'Occasionally I will post on LinkedIn showcasing my projects or other cool things that I have done!',
-    name: 'david-cao99',
+      '我会偶尔在LinkedIn上发布项目展示或其他有趣的技术内容！',
+    name: 'zhu-shaolong',
     designation: '',
     company: '',
     image: linkedin,
-    src_link: 'https://www.linkedin.com/in/david-cao99/',
+    src_link: 'https://www.linkedin.com/in/zhu-shaolong/',
   },
   {
     testimonial:
-      'Mostly all my projects are open source, and hosted on GitHub!',
-    name: 'dave-cao',
+      '我的大部分项目都是开源的，托管在GitHub上！',
+    name: 'zhu-shaolong',
     designation: '',
     company: '',
     image: github_social,
-    src_link: 'https://github.com/dave-cao',
+    src_link: 'https://github.com/zhu-shaolong',
   },
   {
     testimonial:
-      "I post videos on my projects, what I'm learning, or any other cool things!",
-    name: 'sirdavidcao',
+      '我会发布关于项目、学习内容或其他技术相关的视频！',
+    name: 'zhu-shaolong-tech',
     designation: '',
     company: '',
     image: youtube,
-    src_link: 'https://www.youtube.com/@sirdavidcao',
+    src_link: 'https://www.youtube.com/@zhu-shaolong-tech',
   },
 ];
 
 const projects = [
   {
-    name: 'Book Chronicles',
+    name: '智能出纸机物联网系统平台',
     description:
-      'A forum-like book review website. Create an account and review books with me!',
+      '构建围绕智能出纸机的物联网系统平台，包括啦撒小程序、运维端小程序、智慧大屏及后台管理',
     tags: [
       {
         name: 'react',
         color: 'blue-text-gradient',
       },
       {
-        name: 'supabase',
+        name: 'taro',
         color: 'green-text-gradient',
       },
       {
-        name: 'bootstrap',
+        name: 'vue',
         color: 'pink-text-gradient',
       },
+      {
+        name: 'bizcharts',
+        color: 'orange-text-gradient',
+      },
     ],
-    image: bookshelfChronicles,
+    image: bookshelfChronicles, // 您可以替换为项目截图
     about:
-      'A storyboard artist who was looking for a job reached out to me to see if I could create a simple website for him that could show-case his work while he searched for a job. The website is created with plain HTML, CSS3, and Javascript making it simple but effective. It showcases all his photos and featured storyboards.',
-    source_code_link: 'https://github.com/dave-cao/Book-Chronicles',
-    live_link: 'https://dave-cao.github.io/Book-Chronicles/',
+      '为公共卫生间提供智能监测和管理服务，覆盖用户、保洁员和物业的全流程需求，用户量达50万+。全面负责前端开发，主导啦撒小程序、运维端、代理商和广告系统的开发，升级Taro框架至3.6版本，利用bizcharts实现大屏数据可视化。',
+    source_code_link: 'https://github.com/zhu-shaolong/iot-toilet-system',
+    live_link: 'https://toilet-iot-platform.com',
   },
   {
-    name: 'Clever Kiddos Daycare',
-    description: 'A freelance project for a new daycare.',
+    name: '孟想教育及相关项目',
+    description: '基于《孟建平系列丛书》构建的互联网教育项目，支持安卓和iOS的Uniapp混合应用',
     tags: [
       {
-        name: 'nextjs',
+        name: 'uniapp',
         color: 'blue-text-gradient',
       },
       {
-        name: 'javascript',
+        name: 'vue',
         color: 'green-text-gradient',
       },
       {
-        name: 'tailwindcss',
+        name: 'element-ui',
         color: 'pink-text-gradient',
       },
     ],
     image: cleverkiddos,
     about:
-      'B storyboard artist who was looking for a job reached out to me to see if I could create a simple website for him that could show-case his work while he searched for a job. The website is created with plain HTML, CSS3, and Javascript making it simple but effective. It showcases all his photos and featured storyboards.',
-    source_code_link: 'https://clever-kiddos-daycare.vercel.app/',
+      '用户量达150万+的教育平台项目。开发了错题本、课程、消息盒子、VIP引导等核心模块，负责商城页面的迭代优化、优惠券模块开发，开发内容录入、字库词库管理、试题批量处理等后台管理功能。',
+    source_code_link: 'https://github.com/zhu-shaolong/mengxiang-education',
+    live_link: 'https://mengxiang-edu.com',
   },
   {
-    name: 'AI Fluently',
+    name: '智能床控制项目',
     description:
-      'Provided front-end and webscraping services to a local start-up called AI fluently.',
+      '实现微信小程序与智能床的蓝牙通信，通过模块化设计提供便捷的设备操作体验',
     tags: [
       {
-        name: 'svelte',
+        name: 'wechat-miniprogram',
         color: 'blue-text-gradient',
       },
       {
-        name: 'webscraping',
+        name: 'bluetooth',
         color: 'green-text-gradient',
       },
       {
-        name: 'typescript',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: aifluently,
-    about:
-      'C storyboard artist who was looking for a job reached out to me to see if I could create a simple website for him that could show-case his work while he searched for a job. The website is created with plain HTML, CSS3, and Javascript making it simple but effective. It showcases all his photos and featured storyboards.',
-    source_code_link: 'https://www.aifluently.com/',
-  },
-  {
-    name: 'William Heng',
-    description: 'A portfolio website for a Storyboard Artist (freelance)',
-    tags: [
-      {
-        name: 'javascript',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'HTML5',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'CSS3',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: williamPortfolio,
-    about:
-      'D storyboard artist who was looking for a job reached out to me to see if I could create a simple website for him that could show-case his work while he searched for a job. The website is created with plain HTML, CSS3, and Javascript making it simple but effective. It showcases all his photos and featured storyboards.',
-    source_code_link: 'https://github.com/dave-cao/williamPortfolio',
-    live_link: 'https://www.williamheng.ca/',
-  },
-  {
-    name: 'Study Bot',
-    description:
-      'A discord bot that gamifies studying by ranking your study against friends and much more!',
-    tags: [
-      {
-        name: 'javascript',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'discord.js',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'node',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: studybot,
-    about:
-      'E storyboard artist who was looking for a job reached out to me to see if I could create a simple website for him that could show-case his work while he searched for a job. The website is created with plain HTML, CSS3, and Javascript making it simple but effective. It showcases all his photos and featured storyboards.',
-    source_code_link: 'https://github.com/dave-cao/Study-Bot',
-    live_link: '',
-  },
-  {
-    name: 'PhysMatch',
-    description:
-      "Connecting locals with their family physicians. Using EEG's to detect client's emotions.",
-    tags: [
-      {
-        name: 'machine-learning',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'EEG',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'BCI',
+        name: 'iot',
         color: 'pink-text-gradient',
       },
     ],
     image: physmatch,
     about:
-      'F storyboard artist who was looking for a job reached out to me to see if I could create a simple website for him that could show-case his work while he searched for a job. The website is created with plain HTML, CSS3, and Javascript making it simple but effective. It showcases all his photos and featured storyboards.',
-    source_code_link: 'https://devpost.com/software/physmatch',
+      '成功实现了微信小程序与智能床的蓝牙通信，通过模块化设计，使用户能够便捷地操作智能床，并确保了多型号设备的兼容性和通信的稳定性。通过OTA更新（Ymodem协议），提升了设备的远程维护能力。',
+    source_code_link: 'https://github.com/zhu-shaolong/smart-bed-control',
     live_link: '',
+  },
+  {
+    name: '类抖音视频流小程序引流短剧平台',
+    description: '通过发布短视频和短剧内容，成功吸引大量用户并提高平台活跃度',
+    tags: [
+      {
+        name: 'wechat-miniprogram',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'video-streaming',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'taro',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: studybot,
+    about:
+      '通过发布短视频和短剧内容，成功吸引了大量用户并提高了平台的活跃度和用户粘性。用户通过刷剧、追更和分享内容，促进了平台的持续增长和商业价值的提升。',
+    source_code_link: 'https://github.com/zhu-shaolong/short-video-platform',
+    live_link: '',
+  },
+  {
+    name: '智能卫生间机器人IoT平台对接项目',
+    description:
+      '构建集成的物联网平台，实现智能卫生间机器人的实时监控、智能管理和远程维护功能',
+    tags: [
+      {
+        name: 'iot',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'robot-control',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'real-time-monitoring',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: aifluently,
+    about:
+      '构建了一个集成的物联网平台，实现了智能卫生间机器人的实时监控、智能管理和远程维护功能，显著提升了公共卫生间的清洁和维护效率，优化了卫生管理方案，增强了用户体验。',
+    source_code_link: 'https://github.com/zhu-shaolong/toilet-robot-iot',
+    live_link: '',
+  },
+  {
+    name: '浙江政务服务网-总工会系统',
+    description: '集成的工会组织管理系统，提供数字化和智能化服务',
+    tags: [
+      {
+        name: 'vue',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'government-service',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'management-system',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: williamPortfolio,
+    about:
+      '成功打造了一个集成的工会组织管理系统，提供数字化和智能化服务，帮助工会组织和职工实现更高效的管理和服务，提升了政务服务的质量与效率。',
+    source_code_link: 'https://github.com/zhu-shaolong/zhejiang-gov-union',
+    live_link: 'https://zj-gov-union.com',
   },
 ];
 

@@ -16,6 +16,7 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import { EffectCoverflow, Autoplay, Pagination } from 'swiper/modules';
 import React from 'react';
+
 const Works = () => {
   const settings = {
     className: 'center',
@@ -26,26 +27,28 @@ const Works = () => {
     variableWidth: true,
     speed: 500,
   };
+
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>My work</p>
-        <h2 className={styles.sectionHeadText}>Projects.</h2>
+        <p className={styles.sectionSubText}>我的工作</p>
+        <h2 className={styles.sectionHeadText}>项目展示.</h2>
       </motion.div>
       <div className="w-full flex">
         <motion.p
           variants={fadeIn('', '', 0.1, 1)}
           className="mt-3 text-secondary text-[17px] max-w-2xl leading-[30px]"
         >
-          These are my featured projects; ones in which I am particular proud of
-          or made me learn something new.
+          这些是我的精选项目，每一个都是我特别自豪的作品，
+          或者让我学到了新技术的项目。涵盖了物联网、教育、
+          政务服务等多个领域的实际应用。
           <br />
           <br />
           <Link
             className="text-lgs inline-block p-[8px] rounded-md bg-[#8c0327] text-white"
             to="/projects"
           >
-            SEE ALL PROJECTS
+            查看所有项目
           </Link>
         </motion.p>
       </div>
@@ -72,22 +75,12 @@ const Works = () => {
       >
         {projects.map((project, index) => {
           return (
-            // eslint-disable-next-line react/jsx-key
-            <SwiperSlide>
+            <SwiperSlide key={`project-${index}`}>
               <SliderItem key={`project-${index}`} index={index} {...project} />
             </SwiperSlide>
           );
         })}
       </Swiper>
-      {/*<div className="slider-container">*/}
-      {/*  <Slider {...settings}>*/}
-      {/*    {projects.map((project, index) => {*/}
-      {/*      return (*/}
-      {/*        <SliderItem key={`project-${index}`} index={index} {...project} />*/}
-      {/*      );*/}
-      {/*    })}*/}
-      {/*  </Slider>*/}
-      {/*</div>*/}
     </>
   );
 };

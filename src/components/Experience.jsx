@@ -69,13 +69,14 @@ const Experience = () => {
   return (
     <>
       <motion.div>
-        <p className={styles.sectionSubText}>What I have done so far</p>
-        <h2 className={styles.sectionHeadText}>Learning Journey.</h2>
+        <p className={styles.sectionSubText}>我迄今为止所做的工作</p>
+        <h2 className={styles.sectionHeadText}>职业历程.</h2>
       </motion.div>
       <div className="w-full flex">
         <motion.p className="mt-3 text-secondary text-[17px] max-w-2xl leading-[30px]">
-          I started my journey as a self-taught developer, and then pivoted to
-          formal education. I continue to learn outside of school.
+          我是一名经验丰富的Web前端开发工程师，拥有6年的开发经验，
+          专注于React、Vue、Taro等现代前端技术栈，在物联网、教育、
+          政务服务等多个领域都有深入的项目实践经验。
         </motion.p>
       </div>
 
